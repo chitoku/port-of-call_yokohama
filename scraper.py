@@ -82,7 +82,7 @@ for elmTable in root.cssselect("table"):
             minIn = "01"
         else:
             print " *** not match : port-in  *** "
-            print txtDateIn 
+            print txtDateIn.encode('utf_8') 
             continue
 
         time_portin = mYrMon.group(1) + "-" + mYrMon.group(2) + "-" + dayIn + " " + hourIn + ":" + minIn + ":00"
