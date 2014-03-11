@@ -1,11 +1,11 @@
+# coding: utf-8
+
 import scraperwiki  
 import lxml.html
 import re
 import dateutil.parser 
 from datetime import date
 import datetime
-
-# coding: utf-8
 
 debug = 0;
 
