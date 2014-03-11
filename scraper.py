@@ -163,7 +163,7 @@ for elmTable in root.cssselect("table"):
         entry["tour_name"] = tour_name
 
         scraperwiki.sqlite.save(["id"], entry, "portcall")   
-        print datetime_portin.__str__() + " ~ " + datetime_portout.__str__() + " : " + ship_name + " (" + prev_port+ " -> , -> " + next_port + ") ; " + tour_name 
+        print datetime_portin.__str__() + " ~ " + datetime_portout.__str__() + " : " + ship_name.encode('utf_8') + " (" + prev_port.encode('utf_8') + " -> , -> " + next_port.encode('utf_8') + ") ; " + tour_name.encode('utf_8') 
         
         ##
         ## Datastore (DB : "port")
