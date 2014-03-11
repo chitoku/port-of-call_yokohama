@@ -11,7 +11,7 @@ debug = 0;
 
 def DBG(text):
     if debug:
-        print text
+        print text.encode('utf_8')
 
 
 ###########################################################
@@ -37,7 +37,7 @@ for elmTable in root.cssselect("table"):
         continue
     else:
         year_month = elmTable.cssselect("caption").pop(0).text
-        print year_month
+        print year_month.encode('utf_8')
         mYrMon = re.match(r"([0-9]+)\D+([0-9]+)", year_month, re.UNICODE)
 
     for elmTRow in elmTable.cssselect("tbody tr"):
